@@ -71,6 +71,11 @@ namespace DotnetCoreServer.Models
             
             string StrFacebookIDList = string.Join(",", FacebookIDList);
 
+
+            // shaonable 임시로 넣은 코드
+            if (StrFacebookIDList == "")
+                StrFacebookIDList = "nobody";
+
             List<RankUser> list = new List<RankUser>();
             using(MySqlConnection conn = db.GetConnection())
             {   

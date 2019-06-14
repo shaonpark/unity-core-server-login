@@ -62,7 +62,7 @@ namespace DotnetCoreServer.Models
                     SELECT 
                         user_id, facebook_id, facebook_name, 
                         facebook_photo_url, point, created_at, 
-                        access_token, diamond, health, defense, damage,
+                        access_token, diamon, health, defense, damage,
                         speed, health_level, defense_level, 
                         damage_level, speed_level,
                         level, experience
@@ -138,7 +138,7 @@ namespace DotnetCoreServer.Models
                     UPDATE tb_user SET 
                         health = {0}, defense = {1}, damage = {2}, speed = {3},
                         health_level = {4}, defense_level = {5}, damage_level = {6}, speed_level = {7},
-                        diamond = {8}, point = {9}
+                        diamon = {8}, point = {9}
                     WHERE user_id = {10}
                     ",
                     user.Health, user.Defense, user.Damage, user.Speed,
